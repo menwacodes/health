@@ -59,3 +59,12 @@ Medium: 11px
 --- 07 WHITESPACE
 
 */
+
+module.exports = {
+    env: {
+        DB_CONN: "mongodb+srv://<USERNAME>:<PASSWORD>@workout.gzvlnc9.mongodb.net/<DB_NAME>?retryWrites=true&w=majority",
+        DB_UN: "menwa",
+        DB_PW: "HomerBoo2000",
+        DB_N: "workouts"
+    }
+};
