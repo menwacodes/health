@@ -27,7 +27,7 @@ Top Level
 
 | Route    | Purpose                                                                                 | Type   |
 |----------|-----------------------------------------------------------------------------------------|--------|
-| /        | Launch page to Cardio & Index                                                         | Static |
+| /        | Launch page to Cardio & Index                                                           | Static |
 | /cardio  | - Form to enter cardio<br>- Cardio History<br/>- HRZ Calc                               | ISR?   |
 | /weights | - Base weights with pyramid buttons<br/>- Build workout from base<br/>- Workout history | ISR    |
 
@@ -35,7 +35,7 @@ Top Level
 
 | Route           | Purpose              |
 |-----------------|----------------------|
-| /weights        | Get All Index      |
+| /weights        | Get All Index        |
 | /weights/<slug> | Get/Post a body part |
 | /cardio         | Get All Cardio       |
 

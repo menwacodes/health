@@ -1,0 +1,28 @@
+@import "/pages/styles/abstracts/variables";
+
+.main__header {
+  display: flex;
+  padding: 1.2rem 2.4rem;
+  align-items: center;
+
+  &__nav {
+    margin-left: auto;
+    font-size: 1.8rem;
+
+    &__items {
+      display: flex;
+      gap: 1.2rem;
+    }
+
+    &__item {
+      transition: all .2s;
+
+      &:link, &:visited {
+        color: $color-blood-red-dark;
+      }
+      &:hover, &:active {
+        color: $color-blood-red-light
+      }
+    }
+  }
+}

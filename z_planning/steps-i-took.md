@@ -43,6 +43,7 @@ export default Logo;
    2. Created /components/header/Logo.js & SCSS
    3. Imported Logo into Header component
    4. Created shell nav
+   5. Put Header component with logo and main nav together
 
 ## Layout
 1. CSS for this should come from base.scss

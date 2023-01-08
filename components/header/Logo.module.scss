@@ -1,6 +1,17 @@
+@import "/pages/styles/abstracts/variables";
+
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
 
   &__text {
+    display: inline-block;
+    font-size: 3rem;
+    color: $color-blood-red-dark;
+  }
 
+  &__icon {
+    fill: $color-blood-red;
   }
 }

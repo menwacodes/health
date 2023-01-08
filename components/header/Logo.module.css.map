@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"Logo.module.css"}
+{"version":3,"sourceRoot":"","sources":["Logo.module.scss","_variables.scss"],"names":[],"mappings":"AAEA;EACE;EACA;EACA;;AAEA;EACE;EACA;EACA;;AAGF;EACE,MCdc","file":"Logo.module.css"}

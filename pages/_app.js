@@ -1,4 +1,4 @@
-import '/pages/styles/main.css';
+import '/pages/styles/main.scss';
 import Head from "next/head.js";
 import SiteLayout from "../components/layout/SiteLayout.js";
 

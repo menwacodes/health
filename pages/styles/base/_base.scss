@@ -19,6 +19,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 h1 {
@@ -52,6 +53,10 @@ h6 {
 
 ol, ul {
   margin-left: 2rem;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .main-content {

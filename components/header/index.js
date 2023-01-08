@@ -4,17 +4,19 @@ import Logo from "./Logo.js";
 
 function SiteHeader() {
   return (
-    <>
-      <Logo />
-        <nav>
-            <ul>
-              <li><Link href="#">BP</Link></li>
-              <li><Link href="#">Meds</Link></li>
-              <li><Link href="#">Appointments</Link></li>
-              <li><Link href="/workouts">Workouts</Link></li>
+    <header className={classes.main__header}>
+        <Link href={"/"}>
+            <Logo/>
+        </Link>
+        <nav className={classes.main__header__nav}>
+            <ul className={classes.main__header__nav__items}>
+              <li><Link className={classes.main__header__nav__item} href="#">BP</Link></li>
+              <li><Link className={classes.main__header__nav__item} href="#">Meds</Link></li>
+              <li><Link className={classes.main__header__nav__item} href="#">Appointments</Link></li>
+              <li><Link className={classes.main__header__nav__item} href="/workouts">Workouts</Link></li>
             </ul>
         </nav>
-    </>
+    </header>
   )
 }
 
