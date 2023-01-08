@@ -1,5 +1,6 @@
 import {useState} from "react";
 import Button from "../../ui/Button.js";
+import PyramidList from "./PyramidList.js";
 import classes from './WeightCard.module.scss';
 import WeightsList from "./WeightsList.js";
 
@@ -16,13 +17,19 @@ function WeightsCard({weight}) {
 
             {(weightType === 'base') && <footer className={classes.card__footer}>
                 <Button onClick={()=>onClickHandler('volume')}>Pyramid Volume</Button>
-                <Button>Pyramid Weight</Button>
+                <Button onClick={()=>onClickHandler('heavy')}>Pyramid Weight</Button>
             </footer>}
 
-            {(weightType === 'volume') && "Pyramid Volume"}
+            {(weightType === 'volume') && <PyramidList type={'volume'} weight={weight.exercises} />}
             {(weightType === 'volume') && <footer className={classes.card__footer}>
                 <Button onClick={()=>onClickHandler('base')}>Base Weight</Button>
-                <Button>Pyramid Weight</Button>
+                <Button onClick={()=>onClickHandler('heavy')}>Pyramid Weight</Button>
+            </footer>}
+
+            {(weightType === 'heavy') && <PyramidList type={'heavy'} weight={weight.exercises} />}
+            {(weightType === 'heavy') && <footer className={classes.card__footer}>
+                <Button onClick={()=>onClickHandler('volume')}>Pyramid Volume</Button>
+                <Button onClick={()=>onClickHandler('base')}>Base Weight</Button>
             </footer>}
 
         </article>
