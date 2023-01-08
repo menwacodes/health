@@ -1,16 +1,20 @@
-// import packages
-// import files with relative reference
-
-import weights from '../../../data/weights.json'; // is array,has length
+import weights from '../../../data/weights.json';
+import classes from './Weights.module.scss';
+import WeightsCard from "./WeightsCard.js";
 
 function Weights() {
-  console.log(weights[0]._id)
-  const card = weights.map(weight => {})
-  return (
-    <>
-        {JSON.stringify(weights)}
-    </>
-  )
+
+    const card = weights.map(weight => <WeightsCard key={weight._id.mongoId} weight={weight}/>);
+    return (
+        <>
+            <h1 className={classes.weight__title}>Base Weights</h1>
+            <div className={classes.weight__container}>
+                <div className={classes.weight__content}>
+                    {card}
+                </div>
+            </div>
+        </>
+    );
 }
 
-export default Weights
+export default Weights;

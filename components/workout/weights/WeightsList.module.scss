@@ -1,0 +1,23 @@
+@import "/pages/styles/abstracts/variables";
+
+.card__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+
+  &:first-of-type {
+    padding-top: 1rem;
+  }
+
+  &:nth-child(odd) {
+    background-color: $color-primary-grey-light;
+  }
+
+  &__description {
+    text-transform: capitalize;
+  }
+
+  &__weight {
+  }
+
+}

@@ -1,0 +1,15 @@
+.weight__title {
+  text-align: center;
+}
+.weight__container {
+  max-width: 36rem;
+  margin: 3rem auto;
+  font-size: 1.6rem;
+}
+.weight__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/*# sourceMappingURL=Weights.module.css.map */
