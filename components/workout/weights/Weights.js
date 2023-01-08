@@ -1,21 +1,21 @@
 import {useEffect, useState} from "react";
-import weightsData from '../../../data/weights.json';
+// import weightsData from '../../../data/weights.json';
 import classes from './Weights.module.scss';
 import WeightsCard from "./WeightsCard.js";
 
-function Weights() {
-    const [weights, setWeights] = useState([])
+function Weights({weightData}) {
+    const [weights, setWeights] = useState(weightData)
 
     // async function getProducts() {
     //
     // }
 
-    useEffect( () => {
-        setWeights(weightsData)
-    }, []
-    )
+    // useEffect( () => {
+    //     setWeights(weightData)
+    // }, []
+    // )
 
-    const card = weights.map(weight => <WeightsCard key={weight._id.mongoId} weight={weight}/>);
+    const card = weights.map(weight => <WeightsCard key={weight._id} weight={weight}/>);
     return (
         <>
             <h1 className={classes.weight__title}>Base Weights</h1>

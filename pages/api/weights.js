@@ -5,7 +5,7 @@ export async function getWeights() {
     const db = client.db();
     const collection = db.collection("weights");
 
-    return await collection.find().toArray();
+    return await collection.find({}).toArray();
 }
 
 export default async function handler(req, res) {

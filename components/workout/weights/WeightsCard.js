@@ -3,7 +3,7 @@ import classes from './WeightCard.module.scss';
 import WeightsList from "./WeightsList.js";
 
 function WeightsCard({weight}) {
-    const weightItems = weight.exercises.map(weightItem => <WeightsList key={weightItem._id.mongoId} weight={weightItem} />)
+    const weightItems = weight.exercises.map(weightItem => <WeightsList key={weightItem._id} weight={weightItem} />)
     return (
         <article className={classes.card}>
             <header className={classes.card__header}>{weight.bodyPart}</header>
