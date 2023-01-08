@@ -1,0 +1,9 @@
+.card__item {
+  display: flex;
+  padding: 1rem;
+
+  &__description {
+    text-transform: capitalize;
+  }
+
+}

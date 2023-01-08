@@ -1,0 +1,9 @@
+.card__item {
+  display: flex;
+  padding: 1rem;
+}
+.card__item__description {
+  text-transform: capitalize;
+}
+
+/*# sourceMappingURL=PyramidList.module.css.map */

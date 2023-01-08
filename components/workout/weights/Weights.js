@@ -4,18 +4,9 @@ import classes from './Weights.module.scss';
 import WeightsCard from "./WeightsCard.js";
 
 function Weights({weightData}) {
-    const [weights, setWeights] = useState(weightData)
+    // const [weights, setWeights] = useState(weightData)
 
-    // async function getProducts() {
-    //
-    // }
-
-    // useEffect( () => {
-    //     setWeights(weightData)
-    // }, []
-    // )
-
-    const card = weights.map(weight => <WeightsCard key={weight._id} weight={weight}/>);
+    const card = weightData.map(weight => <WeightsCard key={weight._id} weight={weight}/>);
     return (
         <>
             <h1 className={classes.weight__title}>Base Weights</h1>
