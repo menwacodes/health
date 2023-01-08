@@ -1,520 +1,520 @@
 [
   {
-  "_id": {
-    "$oid": "638d1cf0e7e8efd4e64a9bd2"
+    "_id": {
+      "mongoId": "638d1cf0e7e8efd4e64a9bd2"
+    },
+    "bodyPart": "abs",
+    "exercises": [
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bd3"
+        },
+        "name": "Assisted Chin Up Crunch",
+        "baseWeight": 145
+      },
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bd4"
+        },
+        "name": "Barbell rollout",
+        "baseWeight": 225
+      },
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bd5"
+        },
+        "name": "Decline barbell raise",
+        "baseWeight": 50
+      },
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bd6"
+        },
+        "name": "Hammer strength ab crunch",
+        "baseWeight": 125
+      },
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bd7"
+        },
+        "name": "Kneeling cable alt oblique",
+        "baseWeight": 65
+      },
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bd8"
+        },
+        "name": "Landmines",
+        "baseWeight": 35
+      },
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bd9"
+        },
+        "name": "Machine torso",
+        "baseWeight": 135
+      },
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bda"
+        },
+        "name": "Seated plate",
+        "baseWeight": 45
+      },
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bdb"
+        },
+        "name": "Standing cable crunch",
+        "baseWeight": 80
+      },
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bdc"
+        },
+        "name": "Standing cable oblique",
+        "baseWeight": 100
+      },
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bdd"
+        },
+        "name": "Standing cable trunk rotation",
+        "baseWeight": 50
+      },
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bde"
+        },
+        "name": "Standing dumbbell oblique",
+        "baseWeight": 100
+      }
+    ],
+    "__v": 0
   },
-  "bodyPart": "abs",
-  "exercises": [
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bd3"
-      },
-      "name": "Assisted Chin Up Crunch",
-      "baseWeight": 145
+  {
+    "_id": {
+      "mongoId": "638d1cf0e7e8efd4e64a9bdf"
     },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bd4"
+    "bodyPart": "back",
+    "exercises": [
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9be0"
+        },
+        "name": "Back extension",
+        "baseWeight": 280
       },
-      "name": "Barbell rollout",
-      "baseWeight": 225
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bd5"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9be1"
+        },
+        "name": "Cable cross lat pull",
+        "baseWeight": 20
       },
-      "name": "Decline barbell raise",
-      "baseWeight": 50
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bd6"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9be2"
+        },
+        "name": "Front face pull",
+        "baseWeight": 57.5
       },
-      "name": "Hammer strength ab crunch",
-      "baseWeight": 125
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bd7"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9be3"
+        },
+        "name": "Hammer strength front pull down",
+        "baseWeight": 90
       },
-      "name": "Kneeling cable alt oblique",
-      "baseWeight": 65
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bd8"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9be4"
+        },
+        "name": "Hammer strength low row",
+        "baseWeight": 130
       },
-      "name": "Landmines",
-      "baseWeight": 35
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bd9"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9be5"
+        },
+        "name": "Inverted grip lat pull down",
+        "baseWeight": 100
       },
-      "name": "Machine torso",
-      "baseWeight": 135
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bda"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9be6"
+        },
+        "name": "ISO row narrow",
+        "baseWeight": 130
       },
-      "name": "Seated plate",
-      "baseWeight": 45
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bdb"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9be7"
+        },
+        "name": "ISO row wide",
+        "baseWeight": 130
       },
-      "name": "Standing cable crunch",
-      "baseWeight": 80
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bdc"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9be8"
+        },
+        "name": "Long bar push down",
+        "baseWeight": 55
       },
-      "name": "Standing cable oblique",
-      "baseWeight": 100
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bdd"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9be9"
+        },
+        "name": "Rear delt machine",
+        "baseWeight": 130
       },
-      "name": "Standing cable trunk rotation",
-      "baseWeight": 50
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bde"
-      },
-      "name": "Standing dumbbell oblique",
-      "baseWeight": 100
-    }
-  ],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "638d1cf0e7e8efd4e64a9bdf"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bea"
+        },
+        "name": "Wide grip lat pull down",
+        "baseWeight": 100
+      }
+    ],
+    "__v": 0
   },
-  "bodyPart": "back",
-  "exercises": [
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9be0"
-      },
-      "name": "Back extension",
-      "baseWeight": 280
+  {
+    "_id": {
+      "mongoId": "638d1cf0e7e8efd4e64a9beb"
     },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9be1"
+    "bodyPart": "bicep",
+    "exercises": [
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bec"
+        },
+        "name": "Machine bicep curl",
+        "baseWeight": 140
       },
-      "name": "Cable cross lat pull",
-      "baseWeight": 20
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9be2"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bed"
+        },
+        "name": "Preacher hammer",
+        "baseWeight": 40
       },
-      "name": "Front face pull",
-      "baseWeight": 57.5
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9be3"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bee"
+        },
+        "name": "Preacher one arm curl",
+        "baseWeight": 50
       },
-      "name": "Hammer strength front pull down",
-      "baseWeight": 90
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9be4"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bef"
+        },
+        "name": "Preacher seated reverse grip",
+        "baseWeight": 60
       },
-      "name": "Hammer strength low row",
-      "baseWeight": 130
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9be5"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bf0"
+        },
+        "name": "Seated preacher",
+        "baseWeight": 100
       },
-      "name": "Inverted grip lat pull down",
-      "baseWeight": 100
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9be6"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bf1"
+        },
+        "name": "Standing Cable",
+        "baseWeight": 50
       },
-      "name": "ISO row narrow",
-      "baseWeight": 130
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9be7"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bf2"
+        },
+        "name": "Standing cross body hammer",
+        "baseWeight": 20
       },
-      "name": "ISO row wide",
-      "baseWeight": 130
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9be8"
-      },
-      "name": "Long bar push down",
-      "baseWeight": 55
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9be9"
-      },
-      "name": "Rear delt machine",
-      "baseWeight": 130
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bea"
-      },
-      "name": "Wide grip lat pull down",
-      "baseWeight": 100
-    }
-  ],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "638d1cf0e7e8efd4e64a9beb"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bf3"
+        },
+        "name": "Standing single arm cable curl",
+        "baseWeight": 23
+      }
+    ],
+    "__v": 0
   },
-  "bodyPart": "bicep",
-  "exercises": [
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bec"
-      },
-      "name": "Machine bicep curl",
-      "baseWeight": 140
+  {
+    "_id": {
+      "mongoId": "638d1cf0e7e8efd4e64a9bf4"
     },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bed"
+    "bodyPart": "chest",
+    "exercises": [
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bf5"
+        },
+        "name": "Hammer Free ISO one arm",
+        "baseWeight": 45
       },
-      "name": "Preacher hammer",
-      "baseWeight": 40
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bee"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bf6"
+        },
+        "name": "Incline bench fly",
+        "baseWeight": 50
       },
-      "name": "Preacher one arm curl",
-      "baseWeight": 50
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bef"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bf7"
+        },
+        "name": "Incline bench press",
+        "baseWeight": 50
       },
-      "name": "Preacher seated reverse grip",
-      "baseWeight": 60
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bf0"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bf8"
+        },
+        "name": "Incline hammer",
+        "baseWeight": 35
       },
-      "name": "Seated preacher",
-      "baseWeight": 100
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bf1"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bf9"
+        },
+        "name": "Iron cross",
+        "baseWeight": 20
       },
-      "name": "Standing Cable",
-      "baseWeight": 50
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bf2"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bfa"
+        },
+        "name": "Low chest cable cross",
+        "baseWeight": 20
       },
-      "name": "Standing cross body hammer",
-      "baseWeight": 20
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bf3"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bfb"
+        },
+        "name": "Machine chest press",
+        "baseWeight": 160
       },
-      "name": "Standing single arm cable curl",
-      "baseWeight": 23
-    }
-  ],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "638d1cf0e7e8efd4e64a9bf4"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bfc"
+        },
+        "name": "Machine incline press",
+        "baseWeight": 70
+      },
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bfd"
+        },
+        "name": "Machine pec deck",
+        "baseWeight": 175
+      },
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9bfe"
+        },
+        "name": "Mid chest cable cross",
+        "baseWeight": 35.0
+      }
+    ],
+    "__v": 0
   },
-  "bodyPart": "chest",
-  "exercises": [
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bf5"
-      },
-      "name": "Hammer Free ISO one arm",
-      "baseWeight": 45
+  {
+    "_id": {
+      "mongoId": "638d1cf0e7e8efd4e64a9bff"
     },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bf6"
+    "bodyPart": "legs",
+    "exercises": [
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9c00"
+        },
+        "name": "Horizontal calf",
+        "baseWeight": 250
       },
-      "name": "Incline bench fly",
-      "baseWeight": 50
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bf7"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9c01"
+        },
+        "name": "Leg Curl",
+        "baseWeight": 100
       },
-      "name": "Incline bench press",
-      "baseWeight": 50
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bf8"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9c02"
+        },
+        "name": "Seated calf",
+        "baseWeight": 310
       },
-      "name": "Incline hammer",
-      "baseWeight": 35
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bf9"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9c03"
+        },
+        "name": "Standing calf",
+        "baseWeight": 310
       },
-      "name": "Iron cross",
-      "baseWeight": 20
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bfa"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9c04"
+        },
+        "name": "Standing Glute",
+        "baseWeight": 85
       },
-      "name": "Low chest cable cross",
-      "baseWeight": 20
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bfb"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9c05"
+        },
+        "name": "Standing Hammie",
+        "baseWeight": 70
       },
-      "name": "Machine chest press",
-      "baseWeight": 160
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bfc"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9c06"
+        },
+        "name": "Thigh Abductor",
+        "baseWeight": 205
       },
-      "name": "Machine incline press",
-      "baseWeight": 70
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bfd"
-      },
-      "name": "Machine pec deck",
-      "baseWeight": 175
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9bfe"
-      },
-      "name": "Mid chest cable cross",
-      "baseWeight": 35.0
-    }
-  ],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "638d1cf0e7e8efd4e64a9bff"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9c07"
+        },
+        "name": "Thigh Adductor",
+        "baseWeight": 205
+      }
+    ],
+    "__v": 0
   },
-  "bodyPart": "legs",
-  "exercises": [
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9c00"
-      },
-      "name": "Horizontal calf",
-      "baseWeight": 250
+  {
+    "_id": {
+      "mongoId": "638d1cf0e7e8efd4e64a9c08"
     },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9c01"
+    "bodyPart": "shoulder",
+    "exercises": [
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9c09"
+        },
+        "name": "Calf machine shrugs",
+        "baseWeight": 350
       },
-      "name": "Leg Curl",
-      "baseWeight": 100
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9c02"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9c0a"
+        },
+        "name": "Cuban press",
+        "baseWeight": 20
       },
-      "name": "Seated calf",
-      "baseWeight": 310
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9c03"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9c0b"
+        },
+        "name": "External rotation",
+        "baseWeight": 25
       },
-      "name": "Standing calf",
-      "baseWeight": 310
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9c04"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9c0c"
+        },
+        "name": "Front delt raise",
+        "baseWeight": 20
       },
-      "name": "Standing Glute",
-      "baseWeight": 85
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9c05"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9c0d"
+        },
+        "name": "Lateral raise",
+        "baseWeight": 25
       },
-      "name": "Standing Hammie",
-      "baseWeight": 70
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9c06"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9c0e"
+        },
+        "name": "Military press",
+        "baseWeight": 60
       },
-      "name": "Thigh Abductor",
-      "baseWeight": 205
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9c07"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9c0f"
+        },
+        "name": "Military press (Mach)",
+        "baseWeight": 80
       },
-      "name": "Thigh Adductor",
-      "baseWeight": 205
-    }
-  ],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "638d1cf0e7e8efd4e64a9c08"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9c10"
+        },
+        "name": "Seated bent rear delts",
+        "baseWeight": 60
+      }
+    ],
+    "__v": 0
   },
-  "bodyPart": "shoulder",
-  "exercises": [
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9c09"
-      },
-      "name": "Calf machine shrugs",
-      "baseWeight": 350
+  {
+    "_id": {
+      "mongoId": "638d1cf0e7e8efd4e64a9c11"
     },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9c0a"
+    "bodyPart": "triceps",
+    "exercises": [
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9c12"
+        },
+        "name": "Assisted chin up dip",
+        "baseWeight": 145
       },
-      "name": "Cuban press",
-      "baseWeight": 20
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9c0b"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9c13"
+        },
+        "name": "Cable push down",
+        "baseWeight": 95
       },
-      "name": "External rotation",
-      "baseWeight": 25
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9c0c"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9c14"
+        },
+        "name": "Incline bench over head",
+        "baseWeight": 60
       },
-      "name": "Front delt raise",
-      "baseWeight": 20
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9c0d"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9c15"
+        },
+        "name": "Machine extension",
+        "baseWeight": 90
       },
-      "name": "Lateral raise",
-      "baseWeight": 25
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9c0e"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9c16"
+        },
+        "name": "Overhead dumbbell press",
+        "baseWeight": 60
       },
-      "name": "Military press",
-      "baseWeight": 60
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9c0f"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9c17"
+        },
+        "name": "Overhead rope extension",
+        "baseWeight": 50.0
       },
-      "name": "Military press (Mach)",
-      "baseWeight": 80
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9c10"
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9c18"
+        },
+        "name": "Single arm call pull",
+        "baseWeight": 25
       },
-      "name": "Seated bent rear delts",
-      "baseWeight": 60
-    }
-  ],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "638d1cf0e7e8efd4e64a9c11"
-  },
-  "bodyPart": "triceps",
-  "exercises": [
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9c12"
-      },
-      "name": "Assisted chin up dip",
-      "baseWeight": 145
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9c13"
-      },
-      "name": "Cable push down",
-      "baseWeight": 95
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9c14"
-      },
-      "name": "Incline bench over head",
-      "baseWeight": 60
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9c15"
-      },
-      "name": "Machine extension",
-      "baseWeight": 90
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9c16"
-      },
-      "name": "Overhead dumbbell press",
-      "baseWeight": 60
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9c17"
-      },
-      "name": "Overhead rope extension",
-      "baseWeight": 50.0
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9c18"
-      },
-      "name": "Single arm call pull",
-      "baseWeight": 25
-    },
-    {
-      "_id": {
-        "$oid": "638d1cf0e7e8efd4e64a9c19"
-      },
-      "name": "Skull-crusher",
-      "baseWeight": 110
-    }
-  ],
-  "__v": 0
-}
+      {
+        "_id": {
+          "mongoId": "638d1cf0e7e8efd4e64a9c19"
+        },
+        "name": "Skull-crusher",
+        "baseWeight": 110
+      }
+    ],
+    "__v": 0
+  }
 ]

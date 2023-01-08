@@ -1,13 +1,12 @@
 // import packages
 // import files with relative reference
 
-
-function WorkoutsPage() {
+function WeightsCard(props) {
   return (
     <>
-      WORKOUTS PAGE
+      WeightCard
     </>
   )
 }
 
-export default WorkoutsPage
+export default WeightsCard
