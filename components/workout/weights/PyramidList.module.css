@@ -4,6 +4,17 @@
 }
 .card__item__description {
   text-transform: capitalize;
+  flex: 0 1 25rem;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: right;
+  padding-right: 1rem;
+}
+.card__item__number {
+  display: block;
+  flex: 0 1 5rem;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=PyramidList.module.css.map */

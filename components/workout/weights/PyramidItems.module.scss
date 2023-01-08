@@ -1,12 +1,10 @@
-.card__item {
+.item {
   display: flex;
   padding: 1rem;
 
   &__description {
     text-transform: capitalize;
     flex: 0 1 25rem;
-    font-weight: bold;
-    text-decoration: underline;
     text-align: right;
     padding-right: 1rem;
   }
@@ -14,7 +12,5 @@
   &__number {
     display: block;
     flex: 0 1 5rem;
-    font-weight: bold;
-    text-decoration: underline;
   }
 }
