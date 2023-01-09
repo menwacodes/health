@@ -1,0 +1,64 @@
+@import "../../pages/styles/abstracts/_variables.scss";
+
+.cardio__header {
+
+
+  &__form_section {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 4.8rem;
+    max-width: 45rem;
+  }
+
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__input {
+      display: block;
+      border-radius: 5px;
+      border: none;
+      background-color: rgba($color-primary-grey-light, .5);
+      border-bottom: 1px solid transparent;
+      padding: .5rem 1rem;
+      transition: all .2s;
+      width: 22.5rem;
+
+
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba($color-black, .1);
+        border-bottom: 1px solid $color-primary;
+      }
+    }
+
+    &__label {
+      opacity: 0;
+    }
+  }
+}
+
+@media(min-width: 1000px) {
+.cardio__header {
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(25rem, 1fr));
+    justify-items: center;
+
+    &__group_btn {
+      grid-column: 1/-1;
+      padding-top: 2.4rem;
+    }
+  }
+}
+}
