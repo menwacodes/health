@@ -14,7 +14,6 @@ function SiteHeader() {
               <li><Link className={classes.main__header__nav__item} href="#">Meds</Link></li>
               <li><Link className={classes.main__header__nav__item} href="#">Appointments</Link></li>
               <li><Link className={classes.main__header__nav__item} href="/workouts">Workouts</Link></li>
-              <li><Link className={classes.main__header__nav__item} href="/workouts/weights">Tmp Weights</Link></li>
             </ul>
         </nav>
     </header>

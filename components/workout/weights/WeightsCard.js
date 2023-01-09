@@ -1,5 +1,5 @@
 import {useState} from "react";
-import Button from "../../ui/Button.js";
+import Button from "../../ui/Button/Button.js";
 import PyramidList from "./PyramidList.js";
 import classes from './WeightCard.module.scss';
 import WeightsList from "./WeightsList.js";

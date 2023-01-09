@@ -1,4 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;700&display=swap");
+.mb-sm {
+  margin-bottom: 1rem;
+}
+
+.mb-md {
+  margin-bottom: 2rem;
+}
+
+.mb-lg {
+  margin-bottom: 4rem;
+}
+
+.mb-hg {
+  margin-bottom: 6rem;
+}
+
+.mr-sm {
+  margin-right: 1rem;
+}
+
+.mr-md {
+  margin-right: 2rem;
+}
+
+.mr-lg {
+  margin-right: 3rem;
+}
+
+.mr-hg {
+  margin-right: 6rem;
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -58,7 +90,7 @@ ul {
 }
 
 .main-content {
-  padding: 0 5rem;
+  padding: 0 5rem 5rem;
 }
 
 .standard-icon {
