@@ -5,7 +5,7 @@ export async function getCardio() {
     const db = client.db();
     const collection = db.collection("cardios");
 
-    return await collection.find({}).sort({createdAt: -1}).toArray();
+    return await collection.find({}).sort({date: -1}).toArray();
 }
 
 export default async function handler(req, res) {
