@@ -1,6 +1,7 @@
 import Link from "next/link.js";
 import classes from './Header.module.scss'
 import Logo from "./Logo.js";
+// need next-auth here
 
 function SiteHeader() {
   return (
