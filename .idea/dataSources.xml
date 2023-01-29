@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="workouts@workout.gzvlnc9.mongodb.net" uuid="5e70d1af-9c30-4959-9c6f-0f51ca2274d0">
+    <data-source source="LOCAL" name="workout@workout.gzvlnc9.mongodb.net" uuid="2138f393-2409-4b75-86e4-3a05e061fc0e">
       <driver-ref>mongo</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.dbschema.MongoJdbcDriver</jdbc-driver>
-      <jdbc-url>mongodb+srv://workout.gzvlnc9.mongodb.net/workouts?retryWrites=true&amp;w=majority</jdbc-url>
+      <jdbc-url>mongodb+srv://workout.gzvlnc9.mongodb.net/workout?retryWrites=true&amp;w=majority</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
