@@ -1,4 +1,3 @@
-// import getemail from "../../lib/getemail.js";
 import mongoConnect from '../../lib/mongo-connect.js';
 
 export async function getCardio() {
