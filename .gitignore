@@ -3,6 +3,7 @@
 # files
 next.config.js
 config.env
+.env.*
 
 # dependencies
 /node_modules

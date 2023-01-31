@@ -2,6 +2,7 @@ import CardioForm from "../../../components/Cardio/CardioForm.js";
 import CardioHistory from "../../../components/Cardio/CardioHistory.js";
 import {getCardio} from '../../api/cardio.js';
 import classes from './Cardio.module.scss';
+import {getSession} from "next-auth/react";
 
 import mongoConnect from '../../../lib/mongo-connect.js';
 
@@ -25,7 +26,9 @@ function CardioPage({cardio, auth}) {
     );
 }
 
-export async function getServerSideProps() {
+export async function getServerSideProps(context) {
+    const session = await getSession({req: context.req})
+    console.log(session)
 
     const email = "mikeobw@gmail.com";
     let auth = true;
