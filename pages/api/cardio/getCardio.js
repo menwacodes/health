@@ -1,4 +1,4 @@
-import mongoConnect from '../../lib/mongo-connect.js';
+import mongoConnect from '../../../lib/mongo-connect.js';
 
 export async function getCardio() {
     const client = await mongoConnect();

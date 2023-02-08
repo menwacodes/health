@@ -18,6 +18,7 @@ function Login() {
             enteredEmail, enteredPassword, callbackUrl: `${window.location.origin}/`, redirect: false
         }).then(function(result) {
             if (result.error !== null) {
+                console.log(result)
                 if (result.status === 401) {
                     setLoginError("Bad Credentials, try again")
                 } else {
@@ -40,7 +41,7 @@ function Login() {
                 <label htmlFor="password">Password:</label>
                 <input type="password" id={"password"} required ref={passwordInputRef}/>
             </div>
-            <button type={"submit"}>Login</button>
+            <button type={"submit"} onClick={()=> setLoginError('')}>Login</button>
         </form>
     );
 }

@@ -17,16 +17,17 @@ const nextAuthConfig = {
             name: "credentials",
             async authorize(credentials) { // credentials will hold the user/pwd sent from frontend
                 // is there a user
+                console.log(credentials)
                 const client = await mongoConnect();
                 const usersCollection = client.db().collection("users");
-                const user = await usersCollection.findOne({email: credentials.email});
+                const user = await usersCollection.findOne({email: credentials.enteredEmail});
                 if (!user) {
                     await client.close();
                     throw new Error("No User Found");
                 }
 
                 // is their password correct
-                const passwordGood = await passwordsEqual(credentials.password, user.password);
+                const passwordGood = await passwordsEqual(credentials.enteredPassword, user.password);
                 if (!passwordGood) {
                     await client.close();
                     throw new Error("Bad Pw");
@@ -37,8 +38,8 @@ const nextAuthConfig = {
                 userAccount = {
                     email: user.email,
                     role: user.role,
-                    name: user.name,
-                    active: user.active
+                    // name: user.name,
+                    // active: user.active
                 }
                 await client.close();
                 return userAccount;
@@ -78,13 +79,13 @@ const nextAuthConfig = {
             }
             return session
         },
-        async jwt(token, user, account, profile, isNewUser) {
-            console.log(`JWT callback. Got user: ${user}`)
-            if (typeof user !== typeof undefined) {
-                token.user = user
-            }
-            return token
-        }
+        // async jwt(token, user, account, profile, isNewUser) {
+        //     console.log(`JWT callback. Got user: ${user}`)
+        //     if (typeof user !== typeof undefined) {
+        //         token.user = user
+        //     }
+        //     return token
+        // }
     }
 };
 

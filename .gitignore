@@ -4,6 +4,7 @@
 next.config.js
 config.env
 .env.*
+z_planning/user-setup.md
 
 # dependencies
 /node_modules

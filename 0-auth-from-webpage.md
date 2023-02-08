@@ -1,0 +1,1 @@
+https://blog.devso.io/implementing-credentials-provider-on-nextjs-and-nextauth
