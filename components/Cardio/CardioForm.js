@@ -2,7 +2,7 @@ import {useRef} from "react";
 import Button from "../ui/Button/Button.js";
 import classes from './CardioForm.module.scss';
 
-function CardioForm() {
+function CardioForm({onMakeCardio}) {
 
     // inputs
     const dateInputRef = useRef();
@@ -26,12 +26,7 @@ function CardioForm() {
             notes: notesInputRef.current.value
         }
 
-        const response = await fetch(`/api/cardio/createCardio`, {
-            method: 'POST',
-            body: JSON.stringify(cardioData),
-            headers: {'Content-Type': 'application/json'}
-        });
-        const data = await response.json();
+        onMakeCardio(cardioData)
     };
 
     return (

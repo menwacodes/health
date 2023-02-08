@@ -29,5 +29,5 @@ export default async function createCardio(req, res) {
         createdAt: new Date()
     })
 
-    return res.status(201).json({message: "Cardio Created"})
+    return res.status(201).json({message: "Cardio Created", data: cardioData})
 }

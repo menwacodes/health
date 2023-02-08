@@ -1,3 +1,4 @@
+import {useState} from "react";
 import CardioForm from "../../../components/Cardio/CardioForm.js";
 import CardioHistory from "../../../components/Cardio/CardioHistory.js";
 import {getCardio} from '../../api/cardio/getCardio.js';
@@ -10,18 +11,32 @@ function CardioPage({cardio, auth}) {
     // if empty cardio, return "no cardio" message
     // if empty cardio && authorized is no, return _auth message
 
+    const [cardioState, setCardioState] = useState(cardio)
+
     if (!auth) return <h1 className={"center-text"}>Not authorized</h1>
 
-    // const onSubmitHandler = async event => {
-    //     event.preventDefault();
-    //
-    // }
+    const onMakeCardioHandler = async cardioData => {
+        const response = await fetch(`/api/cardio/createCardio`, {
+            method: 'POST',
+            body: JSON.stringify(cardioData),
+            headers: {'Content-Type': 'application/json'}
+        });
+        const data = await response.json();
 
-    const cardioHistoryItems = cardio.map(c => <CardioHistory key={c._id} cardio={c}/>);
+        // make a new array of existing state and new cardio data
+        const newCardioState = cardioState.slice()
+        // append id for key & add to start for sorting
+        cardioData._id = data.data.insertedId
+        newCardioState.unshift(cardioData)
+        // set the cardio state to new array
+        setCardioState(newCardioState)
+    }
+
+    const cardioHistoryItems = cardioState.map(c => <CardioHistory key={c._id} cardio={c}/>);
     return (
         <>
             {/*ToDo: Hide Cardio form is not _auth*/}
-            <CardioForm/>
+            <CardioForm onMakeCardio={onMakeCardioHandler}/>
             <h2 className={"center-text"}>History</h2>
             <div className={"flex-center"}>
                 <article className={classes.history__grid}>
