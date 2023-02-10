@@ -11,7 +11,7 @@ function SiteHeader() {
         </Link>
         <nav className={classes.main__header__nav}>
             <ul className={classes.main__header__nav__items}>
-              <li><Link className={classes.main__header__nav__item} href="#">BP</Link></li>
+              <li><Link className={classes.main__header__nav__item} href="/bp">BP</Link></li>
               <li><Link className={classes.main__header__nav__item} href="#">Meds</Link></li>
               <li><Link className={classes.main__header__nav__item} href="#">Appointments</Link></li>
               <li><Link className={classes.main__header__nav__item} href="/workouts">Workouts</Link></li>

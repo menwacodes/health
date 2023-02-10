@@ -24,7 +24,7 @@ function HeartRateZone() {
                             inputMode: "numeric",
                             min: 10,
                             max: 99,
-                            defaultValue: 53,
+                            defaultValue: 52,
                             onBlur: calcHR
                         }}
                     />
