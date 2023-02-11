@@ -1,0 +1,40 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.6rem;
+}
+.form__date_time {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.form__readings {
+  display: flex;
+  justify-content: space-between;
+}
+.form__reading {
+  display: flex;
+  gap: 1rem;
+}
+
+.select {
+  color: #636363;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid transparent;
+  background-color: rgba(245, 243, 243, 0.5);
+  font: inherit;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s;
+}
+
+.center_text {
+  text-align: center;
+}
+
+.input {
+  width: 10rem;
+}
+
+/*# sourceMappingURL=BPForm.module.css.map */

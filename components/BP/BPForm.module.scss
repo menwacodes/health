@@ -1,0 +1,43 @@
+@import "../../pages/styles/abstracts/variables";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.6rem;
+
+  &__date_time {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__readings {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__reading {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.select {
+  color: $color-grey;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid transparent;
+  background-color: rgba($color-primary-grey-light, .5);
+  font: inherit;
+  padding: .5rem 1rem;
+  transition: all .2s;
+}
+
+.center_text {
+  text-align: center;
+}
+
+.input {
+  width: 10rem;
+}
