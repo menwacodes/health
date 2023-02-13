@@ -14,23 +14,24 @@ import classes from "./BPForm.module.scss";
 function BPForm() {
     return (
         <form className={classes.form}>
-            <div className={classes.form__date_time}>
-                <Input input={{
-                    type: "datetime-local", name: "date", id: "date",
-                    placeholder: "Date", required: true
-                }} label="Date"/>
+            <div className={classes.form__top}>
+                <div className={classes.form__date_time}>
+                    <Input input={{
+                        type: "datetime-local", name: "date", id: "date",
+                        placeholder: "Date", required: true
+                    }}/>
 
-                <select className={classes.select} name="timeOfDay" id="timeOfDay">
-                    <option value="" disabled selected>Time of Day</option>
-                    <option value="morning">Morning</option>
-                    <option value="evening">Afternoon</option>
-                </select>
+                    <select className={classes.select} name="timeOfDay" id="timeOfDay" defaultValue={"init"}>
+                        <option value="init" disabled>Time of Day</option>
+                        <option value="morning">Morning</option>
+                        <option value="evening">Afternoon</option>
+                    </select>
+                </div>
+
+                <TextArea textAreaDef={{name: "notes", id: "notes", cols: 50, rows: 5, placeholder: "Notes"}}/>
             </div>
-
-            <TextArea textAreaDef={{name: "notes", id: "notes", cols: 50, rows: 5, placeholder: "Notes"}} />
-
             <div className={classes.form__readings}>
-                <section>
+                <section className={"mr-lg"}>
                     <h3 className={classes.center_text}>Reading 1</h3>
                     <div className={classes.form__reading}>
                         <Input input={{
@@ -41,7 +42,8 @@ function BPForm() {
                             name: "systolic1",
                             id: "systolic1"
                         }}
-                        inputClasses={classes.input}/>
+                               inputClasses={classes.input}
+                        />
                         <Input input={{
                             type: "number",
                             min: 60,
@@ -50,7 +52,8 @@ function BPForm() {
                             name: "diastolic1",
                             id: "diastolic1"
                         }}
-                        styles={{width: "10rem"}}/>
+                               inputClasses={classes.input}
+                        />
                         <Input input={{
                             type: "number",
                             min: 50,
@@ -58,7 +61,9 @@ function BPForm() {
                             placeholder: "Pulse",
                             name: "pulse1",
                             id: "pulse1"
-                        }}/>
+                        }}
+                               inputClasses={classes.input}
+                        />
                     </div>
                 </section>
 
@@ -72,7 +77,8 @@ function BPForm() {
                             placeholder: "Systolic",
                             name: "systolic2",
                             id: "systolic2"
-                        }}/>
+                        }}
+                               inputClasses={classes.input}/>
                         <Input input={{
                             type: "number",
                             min: 60,
@@ -80,7 +86,8 @@ function BPForm() {
                             placeholder: "Diastolic",
                             name: "diastolic2",
                             id: "diastolic2"
-                        }}/>
+                        }}
+                               inputClasses={classes.input}/>
                         <Input input={{
                             type: "number",
                             min: 100,
@@ -88,7 +95,8 @@ function BPForm() {
                             placeholder: "Pulse",
                             name: "pulse2",
                             id: "pulse2"
-                        }}/>
+                        }}
+                               inputClasses={classes.input}/>
                     </div>
                 </section>
             </div>

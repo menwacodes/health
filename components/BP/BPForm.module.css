@@ -4,6 +4,9 @@
   align-items: center;
   font-size: 1.6rem;
 }
+.form__top {
+  padding-bottom: 1rem;
+}
 .form__date_time {
   display: flex;
   gap: 1rem;
@@ -12,6 +15,9 @@
 .form__readings {
   display: flex;
   justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px dotted #333333;
+  padding-bottom: 1rem;
 }
 .form__reading {
   display: flex;
