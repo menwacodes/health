@@ -23,18 +23,29 @@ function BPForm() {
     const dia2Ref = useRef();
     const pulse2Ref = useRef();
 
-    const submitHandler = event => {
+    const submitHandler = async event => {
         event.preventDefault();
 
-        console.log("date ref: ", dateRef.current.value);
-        console.log("morn/aft ref: ", mornAftRef.current.value);
-        console.log("notes ref: ", notesRef.current.value);
-        console.log("systolic 1 ref: ", sys1Ref.current.value);
-        console.log("diastolic 1 ref: ", dia1Ref.current.value);
-        console.log("pulse 1 ref: ", pulse1Ref.current.value);
-        console.log("systolic 2 ref: ", sys2Ref.current.value);
-        console.log("diastolic 2 ref: ", dia2Ref.current.value);
-        console.log("pulse 2 ref: ", pulse2Ref.current.value);
+        const bpData = {
+            date: dateRef.current.value,
+            timeOfDay: mornAftRef.current.value,
+            notes: notesRef.current.value,
+            systolic1: +sys1Ref.current.value,
+            diastolic1: +dia1Ref.current.value,
+            pulse1: +pulse1Ref.current.value,
+            systolic2: +sys2Ref.current.value,
+            diastolic2: +dia2Ref.current.value,
+            pulse2: +pulse2Ref.current.value
+        }
+
+        const response = await fetch(`/api/bp/createBP`, {
+            method: 'POST',
+            body: JSON.stringify(bpData),
+            headers: {'Content-Type': 'application/json'}
+        });
+        const data = await response.json();
+
+        console.log(data)
     };
 
     return (
@@ -50,14 +61,14 @@ function BPForm() {
 
                     <select className={classes.select} name="timeOfDay" id="timeOfDay" defaultValue={"init"}
                             ref={mornAftRef}>
-                        <option value="init" disabled>Time of Day</option>
+                        <option value="init" disabled>AM/PM</option>
                         <option value="morning">Morning</option>
                         <option value="evening">Evening</option>
                     </select>
                 </div>
 
                 <TextArea
-                    textAreaDef={{name: "notes", id: "notes", cols: 50, rows: 5, placeholder: "Notes"}}
+                    textAreaDef={{name: "notes", id: "notes", cols: 40, rows: 5, placeholder: "Notes"}}
                     ref={notesRef}
                 />
             </div>
@@ -134,7 +145,7 @@ function BPForm() {
                         <Input
                             input={{
                                 type: "number",
-                                min: 100,
+                                min: 50,
                                 max: 250,
                                 placeholder: "Pulse",
                                 name: "pulse2",

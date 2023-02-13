@@ -1,6 +1,13 @@
 # Blood Pressure & Data Structure
 - For testing, use /lib/db-local for connection
 
+## Input
+1. Gather input ✅ 
+2. Connect to DB ✅ 
+3. Create Record ✅ 
+4. Have Form Do 2 & 3 ✅ 
+5. Update State (for display)
+
 ## Display
 1. getServerSideProps to send array of data to component - props
    1. Similar to cardio, API used in GSSP
@@ -8,11 +15,7 @@
 2. Load props into state
 3. Feed state to repeating child component
 
-## Input
-1. Gather input
-2. Connect to DB
-3. Create Record
-4. Update State (for display)
+
 
 ## Structure
 

@@ -3,18 +3,21 @@
   flex-direction: column;
   align-items: center;
   font-size: 1.6rem;
+  padding-top: 2rem;
 }
 .form__top {
+  margin: 0 auto;
   padding-bottom: 1rem;
 }
 .form__date_time {
   display: flex;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem;
 }
 .form__readings {
   display: flex;
-  justify-content: space-between;
+  margin: 0 auto 1.5rem;
+  flex-direction: column;
   padding-top: 1rem;
   border-top: 1px dotted #333333;
   padding-bottom: 1rem;
@@ -26,6 +29,7 @@
 
 .select {
   color: #636363;
+  width: 35%;
   border-radius: 5px;
   border: none;
   border-bottom: 1px solid transparent;
@@ -40,7 +44,14 @@
 }
 
 .input {
-  width: 10rem;
+  width: 11rem;
+}
+
+@media (min-width: 1000px) {
+  .form__readings {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=BPForm.module.css.map */

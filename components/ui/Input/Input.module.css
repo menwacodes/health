@@ -1,7 +1,6 @@
 .input__group {
   display: flex;
   align-items: center;
-  margin-bottom: 0.5rem;
 }
 .input__group__label {
   font-weight: bold;
