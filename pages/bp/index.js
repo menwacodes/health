@@ -3,10 +3,11 @@
 
 import {useState} from "react";
 import BPForm from "../../components/BP/BPForm.js";
+import BPHistory from "../../components/BP/BPHistory.js";
 import mongoConnect from "../../lib/mongo-connect.js";
 
 function BloodPressurePage({bp, auth}) {
-    console.log(bp)
+
 
     const [bpState, setBpState] = useState(bp);
 
@@ -36,10 +37,10 @@ function BloodPressurePage({bp, auth}) {
     // const bpHistoryItems = bpState.map(b)
 
     return (
-        <>
+        <article>
             <BPForm onMakeBp={onMakeBpHandler}/>
-            <p>BP History</p>
-        </>
+            <BPHistory bp={bpState} />
+        </article>
     );
 }
 
