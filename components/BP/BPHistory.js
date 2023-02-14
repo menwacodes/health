@@ -55,7 +55,6 @@ function BPHistory({bp}) {
     });
     return (
         <section className={classes.history}>
-            <h2 className={"center-text"}>History</h2>
             {bpItems}
         </section>
     );

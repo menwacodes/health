@@ -1,0 +1,12 @@
+
+
+.two-side-by-side {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bp-history {
+  border-top: 2px solid $color-blood-red;
+  padding-top: 2rem;
+}

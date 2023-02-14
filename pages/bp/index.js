@@ -1,17 +1,20 @@
-// import packages
-// import files with relative reference
-
 import {useState} from "react";
 import BPForm from "../../components/BP/BPForm.js";
 import BPHistory from "../../components/BP/BPHistory.js";
+import BPHistoryGrid from "../../components/BP/BPHistoryGrid.js";
+import Button from "../../components/ui/Button/Button.js";
 import mongoConnect from "../../lib/mongo-connect.js";
+import classes from "./BloodPressure.module.scss"
 
 function BloodPressurePage({bp, auth}) {
 
+    const [showGrid, setShowGrid] = useState(true)
 
     const [bpState, setBpState] = useState(bp);
 
     if (!auth) return <h1 className={"center-text"}>Not Authorized</h1>
+
+    const showGridHandler = () => setShowGrid(showGrid => !showGrid)
 
     /*
         Takes BP from form and
@@ -19,7 +22,6 @@ function BloodPressurePage({bp, auth}) {
           2. Updates state with the data
      */
     const onMakeBpHandler = async bpData => {
-
         const response = await fetch(`/api/bp/createBP`, {
             method: 'POST',
             body: JSON.stringify(bpData),
@@ -34,12 +36,18 @@ function BloodPressurePage({bp, auth}) {
         setBpState(newBpState)
     }
 
-    // const bpHistoryItems = bpState.map(b)
+    // const bpHistoryItems = bpState.map(b)  two-side-by-side bp-history mb-md mt-md
 
     return (
         <article>
             <BPForm onMakeBp={onMakeBpHandler}/>
-            <BPHistory bp={bpState} />
+            <div className={`${classes.two_side_by_side} ${classes.bp_history}`}>
+                <h2 className={"center-text"}>History</h2>
+                <Button onClick={showGridHandler}>{showGrid ? "Show Cards" : "Show Table"}</Button>
+            </div>
+
+            {showGrid && <BPHistoryGrid bp={bpState}/>}
+            {!showGrid && <BPHistory bp={bpState}/>}
         </article>
     );
 }

@@ -1,7 +1,7 @@
 @import "../../pages/styles/abstracts/_variables.scss";
 
 .history {
-  padding-top: 2rem;
+  //padding-top: 2rem;
 
   &__grid {
     display: grid;
@@ -9,6 +9,7 @@
     width: 80%;
     margin: .75rem auto 0;
     column-gap: 1rem;
+    font-size: 1.4rem;
 
     &__title {
       font-weight: bold;
@@ -16,7 +17,7 @@
 
     &__subtitle {
       margin-bottom: 0;
-      margin-top: 3rem;
+      font-size: 1.8rem;
     }
 
     &__reading_line {
@@ -27,5 +28,13 @@
       justify-self: center;
     }
   }
+}
 
+@media(min-width: 1000px) {
+  .history {
+    &__grid {
+      width: 30%;
+      font-size: 1.6rem;
+    }
+  }
 }

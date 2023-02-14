@@ -1,0 +1,58 @@
+.container {
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(6, 1fr);
+  align-items: center;
+  justify-items: center;
+  width: 90%;
+
+  &__title {
+    font-weight: bold;
+  }
+
+  &__reading1 {
+    grid-column: 2/5;
+    //justify-self: center;
+  }
+
+  &__reading2 {
+    grid-column: 5/8;
+    //justify-self: center;
+  }
+
+  &__sys1 {
+    grid-column: 2
+  }
+
+  &__dia1 {
+    grid-column: 3
+  }
+
+  &__pulse1 {
+    grid-column: 4
+  }
+
+  &__sys2 {
+    grid-column: 5
+  }
+
+  &__dia2 {
+    grid-column: 6
+  }
+
+  &__pulse2 {
+    grid-column: 7
+  }
+}
+
+@media (min-width: 1000px) {
+  .grid {
+    font-size: 1.6rem;
+    width: 40%;
+    margin: 0 auto;
+  }
+}

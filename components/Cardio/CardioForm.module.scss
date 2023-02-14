@@ -34,7 +34,6 @@
       width: 22.5rem;
 
 
-
       &:focus {
         outline: none;
         box-shadow: 0 1rem 2rem rgba($color-black, .1);
@@ -49,16 +48,16 @@
 }
 
 @media(min-width: 1000px) {
-.cardio__header {
-  &__form {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(25rem, 1fr));
-    justify-items: center;
+  .cardio__header {
+    &__form {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(25rem, 1fr));
+      justify-items: center;
 
-    &__group_btn {
-      grid-column: 1/-1;
-      padding-top: 2.4rem;
+      &__group_btn {
+        grid-column: 1/-1;
+        padding-top: 2.4rem;
+      }
     }
   }
-}
 }
