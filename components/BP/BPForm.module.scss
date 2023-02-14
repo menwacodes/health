@@ -53,11 +53,19 @@
   width: 11rem;
 }
 
+.font_small {
+  font-size: $font-small;
+}
+
 @media (min-width: 1000px) {
   .form {
     &__readings {
       flex-direction: row;
       justify-content: space-between;
+
+      & section:first-of-type {
+        margin-right: 3rem;
+      }
     }
   }
 }

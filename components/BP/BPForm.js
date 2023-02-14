@@ -12,7 +12,7 @@ import Input from "../ui/Input/Input.js";
 import TextArea from "../ui/TextArea/TextArea.js";
 import classes from "./BPForm.module.scss";
 
-function BPForm() {
+function BPForm({onMakeBp}) {
     const dateRef = useRef();
     const mornAftRef = useRef();
     const notesRef = useRef();
@@ -38,14 +38,16 @@ function BPForm() {
             pulse2: +pulse2Ref.current.value
         }
 
-        const response = await fetch(`/api/bp/createBP`, {
-            method: 'POST',
-            body: JSON.stringify(bpData),
-            headers: {'Content-Type': 'application/json'}
-        });
-        const data = await response.json();
+        // const response = await fetch(`/api/bp/createBP`, {
+        //     method: 'POST',
+        //     body: JSON.stringify(bpData),
+        //     headers: {'Content-Type': 'application/json'}
+        // });
+        // const data = await response.json();
+        //
+        // console.log(data)
+        onMakeBp(bpData)
 
-        console.log(data)
     };
 
     return (
@@ -57,7 +59,9 @@ function BPForm() {
                             type: "datetime-local", name: "date", id: "date",
                             placeholder: "Date", required: true
                         }}
-                        ref={dateRef}/>
+                        ref={dateRef}
+                        inputClasses={classes.font_small}
+                    />
 
                     <select className={classes.select} name="timeOfDay" id="timeOfDay" defaultValue={"init"}
                             ref={mornAftRef}>
@@ -73,7 +77,7 @@ function BPForm() {
                 />
             </div>
             <div className={classes.form__readings}>
-                <section className={"mr-lg"}>
+                <section>
                     <h3 className={classes.center_text}>Reading 1</h3>
                     <div className={classes.form__reading}>
                         <Input

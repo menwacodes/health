@@ -47,10 +47,17 @@
   width: 11rem;
 }
 
+.font_small {
+  font-size: 1.2rem;
+}
+
 @media (min-width: 1000px) {
   .form__readings {
     flex-direction: row;
     justify-content: space-between;
+  }
+  .form__readings section:first-of-type {
+    margin-right: 3rem;
   }
 }
 
