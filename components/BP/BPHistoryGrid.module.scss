@@ -10,6 +10,16 @@
   justify-items: center;
   width: 90%;
 
+  &__date {
+    justify-self: start;
+  }
+
+  &__note {
+    font-style: italic;
+    text-align: right;
+    font-size: 1.4rem;
+  }
+
   &__title {
     font-weight: bold;
   }

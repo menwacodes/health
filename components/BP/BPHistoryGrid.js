@@ -14,9 +14,9 @@ const BPHistoryGrid = ({bp}) => {
         return (
             <div key={bp._id} className={classes.grid}>
 
-                <span>
+                <span className={classes.grid__date}>
                     {formattedDate} ({amPm})
-                    {bp.notes && <p>{bp.notes}</p>}
+                    {bp.notes && <p className={classes.grid__note}>{bp.notes}</p>}
                 </span>
                 <span>{bp.systolic1}</span>
                 <span>{bp.diastolic1}</span>
