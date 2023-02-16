@@ -1,0 +1,23 @@
+@import "/pages/styles/abstracts/variables";
+
+.card {
+  border: 1px solid $color-primary;
+  border-radius: .5rem;
+  margin: 0 auto 2rem;
+
+  &__header {
+    text-align: center;
+    border-bottom: 1px solid $color-primary;
+    padding: 1rem 0;
+  }
+
+  &__med_items {
+    padding: 1rem;
+  }
+
+  &__med_item {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+  }
+}
