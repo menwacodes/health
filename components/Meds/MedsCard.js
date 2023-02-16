@@ -36,7 +36,7 @@ function MedsCard({meds}) {
                     meds.stopped &&
                     <div className={classes.card__med_item}>
                         <span>Reason</span>
-                        <span>{meds.stopped.reason}</span>
+                        <span style={{textAlign: "right"}}>{meds.stopped.reason}</span>
                     </div>}
             </section>
         </article>
