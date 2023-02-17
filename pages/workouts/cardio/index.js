@@ -3,13 +3,14 @@ import CardioForm from "../../../components/Cardio/CardioForm.js";
 import CardioHistory from "../../../components/Cardio/CardioHistory.js";
 import {getCardio} from '../../api/cardio/getCardio.js';
 import classes from './Cardio.module.scss';
-// import {getSession} from "next-auth/react";
+import {getSession} from "next-auth/react";
+import {getServerSession} from "next-auth";
 
 import mongoConnect from '../../../lib/mongo-connect.js';
 
 function CardioPage({cardio, auth}) {
     // if empty cardio, return "no cardio" message
-    // if empty cardio && authorized is no, return _auth message
+    // if empty cardio && authorized is no, return auth message
 
     const [cardioState, setCardioState] = useState(cardio)
 
@@ -35,7 +36,7 @@ function CardioPage({cardio, auth}) {
     const cardioHistoryItems = cardioState.map(c => <CardioHistory key={c._id} cardio={c}/>);
     return (
         <>
-            {/*ToDo: Hide Cardio form is not _auth*/}
+            {/*ToDo: Hide Cardio form is not auth*/}
             <CardioForm onMakeCardio={onMakeCardioHandler}/>
             <h2 className={"center-text"}>History</h2>
             <div className={"flex-center"}>
@@ -48,8 +49,8 @@ function CardioPage({cardio, auth}) {
 }
 
 export async function getServerSideProps(context) {
-    // const session = await getSession({req: context.req})
-    // console.log(session)
+    const session = await getServerSession(context.req, context.res) // req: context.req
+    console.log("session:", session)
 
     const email = "mikeobw@gmail.com"; // ToDo: update to get from JWT
     let auth = true;

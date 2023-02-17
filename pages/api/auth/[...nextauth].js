@@ -15,9 +15,10 @@ const nextAuthConfig = {
         CredentialsProvider({
             id: "credentials", // used in frontend signin method to identify this provider
             name: "credentials",
+
             async authorize(credentials) { // credentials will hold the user/pwd sent from frontend
                 // is there a user
-                console.log(credentials)
+
                 const client = await mongoConnect();
                 const usersCollection = client.db().collection("users");
                 const user = await usersCollection.findOne({email: credentials.enteredEmail});
@@ -25,29 +26,38 @@ const nextAuthConfig = {
                     await client.close();
                     throw new Error("No User Found");
                 }
+                // console.log(credentials.enteredPassword)
+                // console.log(user.password)
 
                 // is their password correct
                 const passwordGood = await passwordsEqual(credentials.enteredPassword, user.password);
+                console.log(passwordGood)
                 if (!passwordGood) {
+                    console.log("in bad pw")
                     await client.close();
                     throw new Error("Bad Pw");
                 }
 
                 // user exists and password is good
                 // put only relevant stuff into userAccount object
+                console.log(user.email)
                 userAccount = {
+                    id: user._id,
                     email: user.email,
                     role: user.role,
+                    name: user.name
                     // name: user.name,
                     // active: user.active
                 }
                 await client.close();
+                console.log("In ...[nextauth], userAccount ⬇️")
+                console.log(userAccount)
                 return userAccount;
             }
         })
     ],
     callbacks: {
-        async signIn(user, account, profile) {
+        async signIn(user, account, profile, email, credentials) {
             try {
                 // user object is wrapped in another user object
                 user = user.user;
