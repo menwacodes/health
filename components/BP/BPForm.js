@@ -13,6 +13,7 @@ import TextArea from "../ui/TextArea/TextArea.js";
 import classes from "./BPForm.module.scss";
 
 function BPForm({onMakeBp}) {
+    const formRef = useRef();
     const dateRef = useRef();
     const mornAftRef = useRef();
     const notesRef = useRef();
@@ -47,11 +48,12 @@ function BPForm({onMakeBp}) {
         //
         // console.log(data)
         onMakeBp(bpData)
+        formRef.current.reset()
 
     };
 
     return (
-        <form className={classes.form} onSubmit={submitHandler}>
+        <form className={classes.form} onSubmit={submitHandler} ref={formRef}>
             <div className={classes.form__top}>
                 <div className={classes.form__date_time}>
                     <Input
