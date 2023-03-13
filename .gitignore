@@ -6,6 +6,7 @@ config.env
 .env.*
 z_planning/user-setup.md
 z_planning/0-export-data.md
+scripts/sensitive/*
 
 # dependencies
 /node_modules

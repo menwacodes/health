@@ -59,7 +59,6 @@ export async function getServerSideProps() {
     const email = "mikeobw@gmail.com";
     let auth = true;
     let bp;
-
     const client = await mongoConnect();
     const db = client.db();
     const collection = db.collection("users");
