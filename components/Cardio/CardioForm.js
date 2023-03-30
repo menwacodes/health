@@ -27,6 +27,15 @@ function CardioForm({onMakeCardio}) {
         }
 
         onMakeCardio(cardioData)
+
+        //// Clear form values
+        dateInputRef.current.value = "";
+        timeInputRef.current.value = "";
+        avgBpmInputRef.current.value = "";
+        minHrInputRef.current.value = "";
+        maxHrInputRef.current.value = "";
+        equipmentInputRef.current.value = "";
+        notesInputRef.current.value = "";
     };
 
     return (
