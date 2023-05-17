@@ -4,6 +4,7 @@
 next.config.js
 config.env
 .env.*
+.env
 z_planning/user-setup.md
 z_planning/0-export-data.md
 scripts/sensitive/*
