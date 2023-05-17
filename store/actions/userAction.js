@@ -60,6 +60,7 @@ export const signInUser = createAsyncThunk('user/signInUser',
 export const autoSignIn = createAsyncThunk('user/autoSignIn',
     async (obj, {dispatch}) => {
         try {
+            console.log("in auto signin")
             // fetch info from db about the user
             const response = await fetch('/api/users/user');
             return await response.json();

@@ -14,9 +14,13 @@ const userSchema = new Schema({
             }
         }
     },
-    password: { type: String, required: [true, 'Password required'], trim: true },
+    password: {
+        type: String,
+        required: [true, 'Password required'],
+        trim: true,
+        minLength: [6, "Password must be at least 6 characters"]
+    },
     firstName: { type: String, trim: true, default: "First Name" },
-    lastName: { type: String, trim: true, default: "Last Name" },
     role: { type: String, enum: ["user", "admin"], default: "user" }
 });
 const User = models.User || model('User', userSchema);
