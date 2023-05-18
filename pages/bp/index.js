@@ -74,6 +74,7 @@ export async function getServerSideProps(context) {
     const bpCollection = db.collection("bp");
     const bpData = await bpCollection.find({}).sort({ date: -1 }).toArray();
     const bp = JSON.parse(JSON.stringify(bpData));
+    await client.close();
 
 
     return { props: { bp, auth } };
