@@ -5,7 +5,7 @@ import connectMongoose from "@/database/db";
 
 export const authOptions = {
     session: {
-        secret: "heHad5zml2XeQtAaq5w7CFWEmGesvhhkmMaup1twHN4",
+        secret: "notAnActualCode",
         jwt: true
     },
     providers: [
